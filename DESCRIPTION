@@ -1,0 +1,16 @@
+Package: ThreeArmedTrials
+Type: Package
+Title: Design and Analysis of Clinical Non-inferiority or Superiority
+        Trials with Active and Placebo Control
+Version: 0.1-0
+Date: 2015-01-04
+Author: Tobias Muetze
+Maintainer: Tobias Muetze <tobias.muetze@outlook.com>
+Description: Design and analyze three-armed non-inferiority or superiority trials which follow a gold-standard design, i.e. trials with an experimental treatment, an active and a placebo control. The following distribution of endpoints is covered: negative binomial distribution. 
+Depends: R (>= 3.0.0)
+Imports: stats, MASS
+License: GPL (>= 2)
+NeedsCompilation: yes
+Packaged: 2015-01-04 17:28:53 UTC; tonux
+Repository: CRAN
+Date/Publication: 2015-01-04 23:44:03

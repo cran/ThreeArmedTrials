@@ -1,0 +1,25 @@
+\name{ThreeArmedTrials-package}
+\docType{package}
+\title{Design and Analysis of Three-armed Clinical Non-inferiority or Superiority Trials with Active and Placebo Control}
+\description{
+The package \pkg{ThreeArmedTrials} provides functions for designing and analyzing non-inferiority or superiority trials with an active and a placebo control.
+Non-inferiority and superiority are defined through the hypothesis \eqn{(\lambda_P - \lambda_E)/(\lambda_P - \lambda_R) \le \Delta} with the alternative hypothesis \eqn{(\lambda_P - \lambda_E)/(\lambda_P - \lambda_R) > \Delta}. 
+The parameters \eqn{\lambda_E}, \eqn{\lambda_R}, and \eqn{\lambda_P} are associated with the distribution of the endpoints and smaller values of \eqn{\lambda_E}, \eqn{\lambda_R}, and \eqn{\lambda_P} are considered to be desirable. A detailed description of these parameters can be found in the help file of the individual functions. 
+The margin \eqn{\Delta} is between 0 and 1 for testing non-inferiority and larger than 1 for testing superiority. 
+
+A detailed discussion of the hypothesis can be found in Hauschke and Pigeot (2005).
+
+The statistical theory for negative binomial distributed endpoint has been developed by Muetze et al. (2015).
+}
+
+\author{
+Tobias Muetze \cr \email{tobias.muetze@outlook.com}
+
+\bold{Maintainer}:\cr Tobias Muetze 
+}
+
+\references{
+Hauschke, D. and Pigeot, I. 2005. \dQuote{Establishing efficacy of a new experimental treatment in the 'gold standard' design.} Biometrical Journal 47, 782--786.
+
+Muetze, T. et al. 2015. \dQuote{Design and analysis of three-arm trials with negative binomially distributed endpoints.} \emph{Submitted.} 
+}
