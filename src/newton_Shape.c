@@ -13,12 +13,12 @@ void erste_Abl_func( double *erste_Abl, int *zufallszahlen, double theta, double
 	}
 
 	erste_ableitung = erste_ableitung + n1 * log( theta / (mean1 + theta)) + n2 * log( theta / (mean2 + theta)) + n3 * log( theta / (mean3 + theta));
-  
+
   erste_Abl[0] = erste_ableitung;
 
 }
-      
-    
+
+
 
 
 void newton_Shape( int *zufallszahlen, double *mean1_in, double *mean2_in, double *mean3_in, int *n1_in, int *n2_in, int *n3_in, double *theta_out){
@@ -32,13 +32,12 @@ void newton_Shape( int *zufallszahlen, double *mean1_in, double *mean2_in, doubl
   int n = n1 + n2 + n3;
   double erste_ableitung = 0;
   double erste_ableitung_help = 0;
-  double erste_abl_func_in[1]; 
+  double erste_abl_func_in[1];
   double zweite_ableitung = 0;
-  double sigma2 = 0;
   double theta = 0;
   double theta_min = pow(10, -2);
   double theta_max = pow(10, 6);
-  double theta_alt;
+  //double theta_alt;
   double eps = pow(10,-6);
   int max_iter = 500;
   int counter_iter = 0;
@@ -49,22 +48,22 @@ void newton_Shape( int *zufallszahlen, double *mean1_in, double *mean2_in, doubl
   // Ueberpruefe, ob die erste Ableitung fuer theta_min bereits kleiner als Null ist, wenn ja, ist MLE fuer theta
   //  kleiner als theta_min und theta wird im Bereich kleiner als theta_min gesucht
   erste_abl_func_in[0] = 0;
-  erste_Abl_func( erste_abl_func_in, zufallszahlen, theta_min, mean1, mean2, mean3, n1, n2, n3, n); 
+  erste_Abl_func( erste_abl_func_in, zufallszahlen, theta_min, mean1, mean2, mean3, n1, n2, n3, n);
   erste_ableitung = erste_abl_func_in[0];
   theta = theta_min;
   if( erste_ableitung < 0 ){
     while( erste_ableitung < 0 ){
       theta = theta / 10;
       erste_abl_func_in[0] = 0;
-      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n); 
+      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n);
       erste_ableitung = erste_abl_func_in[0];
     }
 	}
-  else{ 
+  else{
 	  while( theta <= theta_max ){
       erste_ableitung_help = erste_ableitung;
       erste_abl_func_in[0] = 0;
-      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n); 
+      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n);
       erste_ableitung = erste_abl_func_in[0];
 
 		  if(erste_ableitung < 0 && erste_ableitung_help > 0){
@@ -76,16 +75,16 @@ void newton_Shape( int *zufallszahlen, double *mean1_in, double *mean2_in, doubl
     }
     theta = theta / 5;
 	}
-  
+
 	if( theta*5 >  theta_max ){
 		theta_out[0] = INFINITY;
 	}
 	else{
 	  while( counter_iter < max_iter ){
-	    theta_alt = theta;
+	    //theta_alt = theta;
 	    // Berechnen der ersten Ableitung
       erste_abl_func_in[0] = 0;
-      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n); 
+      erste_Abl_func( erste_abl_func_in, zufallszahlen, theta, mean1, mean2, mean3, n1, n2, n3, n);
       erste_ableitung = erste_abl_func_in[0];
 
       if( fabs( erste_ableitung ) < eps ){
@@ -103,9 +102,9 @@ void newton_Shape( int *zufallszahlen, double *mean1_in, double *mean2_in, doubl
 	    theta = theta - erste_ableitung / zweite_ableitung;
       counter_iter++;
 	  }
-	
+
     	theta_out[0] = (double) theta;
 }
 
-			
+
 }
