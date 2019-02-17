@@ -33,4 +33,3 @@ numeric
 negative log-likelihood function of the three-arm study with binary endpoints
 }
 \keyword{internal}
-

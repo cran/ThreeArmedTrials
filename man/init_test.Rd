@@ -11,4 +11,3 @@ Initialize object with the data from the three-arm trial which
 will be used during the evaluation
 }
 \keyword{internal}
-

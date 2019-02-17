@@ -111,7 +111,7 @@ calc_power_ret.normal <- function(x, Delta, allocation, n = NULL, power = NULL, 
     var_equal <- FALSE
   }
 
-  if (any(c(length(x$experiment), length(x$reference), length(x$placebo)) != 2)) {
+  if (any(c(length(x$para_exp), length(x$para_ref), length(x$para_pla)) != 2)) {
     stop("Two parameters must be defined for power related calculations for normal endpoints.")
   }
 
@@ -185,7 +185,7 @@ calc_power_ret.normal <- function(x, Delta, allocation, n = NULL, power = NULL, 
   }
 
   # Define 'method' for output
-  method <- 'Power calculation for Wald-type test in three-arm trial with poisson endpoints'
+  method <- 'Power calculation for Wald-type test in three-arm trial with normal endpoints'
   note <- NULL
   structure(list(method = method,
                  meanExp = mean_exp,

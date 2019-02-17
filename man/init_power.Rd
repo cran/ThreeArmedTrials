@@ -11,4 +11,3 @@ Initialize object with the values for the power calculation
 for a three-arm trial
 }
 \keyword{internal}
-

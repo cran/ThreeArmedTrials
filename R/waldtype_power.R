@@ -1,4 +1,4 @@
-#' @title Power related calcuations for three-arm clinical trials
+#' @title Power related calculations for three-arm clinical trials
 #' @description Compute power, sample size, or level of significance for
 #' Wald-type test for non-inferiority or superiority of the experimental treatment
 #' versus reference treatment with respect to placebo.

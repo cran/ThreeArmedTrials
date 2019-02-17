@@ -17,4 +17,3 @@ remission
 A dataset indicating whether a patient went into remission defined as a HAM-D total score of <= 7.
 }
 \keyword{datasets}
-

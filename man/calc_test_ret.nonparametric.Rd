@@ -11,4 +11,3 @@ Method for performing studentized permutation test of retention of effect hypoth
 in non-parametric model
 }
 \keyword{internal}
-

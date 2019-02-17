@@ -10,4 +10,3 @@
 Parameter estimation for Wald-type test with binary endpoints
 }
 \keyword{internal}
-

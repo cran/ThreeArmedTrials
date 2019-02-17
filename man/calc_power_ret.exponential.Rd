@@ -11,4 +11,3 @@
 Power related calculations for Wald-type test with exponentially distributed endpoints
 }
 \keyword{internal}
-

@@ -11,4 +11,3 @@
 Default method for power calculations in three-arm trials
 }
 \keyword{internal}
-

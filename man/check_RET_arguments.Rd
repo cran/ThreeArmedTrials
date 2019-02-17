@@ -21,4 +21,3 @@ Is between 0 and 1 in case of non-inferiority and larger than 1 in case of super
 \description{
 Check arguments for their respective condition
 }
-

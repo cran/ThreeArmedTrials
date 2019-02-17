@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -12,52 +12,284 @@
 
 
 
-<title></title>
+<title>ThreeArmedTrials.utf8</title>
 
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+<style type="text/css" data-origin="pandoc">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 
 
 
-<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#header {
+text-align: center;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
 
 </head>
 
@@ -73,7 +305,7 @@ An introduction to planning and analyzing three-arm trials using the package Thr
 Tobias Mütze
 </center></em></h4>
 <h4 class="date"><em><center>
-2016-05-17
+2019-02-17
 </center></em></h4>
 
 
@@ -89,13 +321,11 @@ Tobias Mütze
 <hr />
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-The <em>gold standard</em> design for three-arm trials refers to trials with an active control (often called reference) and a placebo control in addition to the experimental treatment group. This trial design is recommended when being ethically justifiable and it allows the simultaneous comparison of experimental treatment, reference, and placebo. With <span class="math inline">\(\lambda_{E}\)</span>, <span class="math inline">\(\lambda_{R}\)</span>, and <span class="math inline">\(\lambda_{P}\)</span> the parameter of interest for the experimental treatment, the reference, and the placebo, respectively, and smaller parameters <span class="math inline">\(\mu_{k}\)</span> being desired, the null hypothesis of non-inferiority and superiority can be defined by
-\begin{align*}
+<p>The <em>gold standard</em> design for three-arm trials refers to trials with an active control (often called reference) and a placebo control in addition to the experimental treatment group. This trial design is recommended when being ethically justifiable and it allows the simultaneous comparison of experimental treatment, reference, and placebo. With <span class="math inline">\(\lambda_{E}\)</span>, <span class="math inline">\(\lambda_{R}\)</span>, and <span class="math inline">\(\lambda_{P}\)</span> the parameter of interest for the experimental treatment, the reference, and the placebo, respectively, and smaller parameters <span class="math inline">\(\mu_{k}\)</span> being desired, the null hypothesis of non-inferiority and superiority can be defined by <span class="math display">\[\begin{align*}
   H_0: \lambda_{P}-\lambda_{E} \leq \Delta(\lambda_{P}-\lambda_{R} ) 
   \quad \text{vs.} \quad
   H_1: \lambda_{P}-\lambda_{E} &gt; \Delta(\lambda_{P}-\lambda_{R} ).
-  \end{align*}
-<p>Superiority is tested with a margin of <span class="math inline">\(\Delta\in [1,\infty)\)</span> and non-inferiority with a margin of <span class="math inline">\(\Delta \in (0,1)\)</span>. In the case of non-inferiority, this hypothesis is referred to as the retention of effect (RET) hypothesis. If the null hypothesis <span class="math inline">\(H_{0}\)</span> is rejected, non-inferiority or superiority of the experimental treatment compared to the reference is shown.</p>
+  \end{align*}\]</span> Superiority is tested with a margin of <span class="math inline">\(\Delta\in [1,\infty)\)</span> and non-inferiority with a margin of <span class="math inline">\(\Delta \in (0,1)\)</span>. In the case of non-inferiority, this hypothesis is referred to as the retention of effect (RET) hypothesis. If the null hypothesis <span class="math inline">\(H_{0}\)</span> is rejected, non-inferiority or superiority of the experimental treatment compared to the reference is shown.</p>
 </div>
 <div id="statistical-model-hypothesis-and-test-statistic" class="section level2">
 <h2>Statistical model, hypothesis, and test statistic</h2>
@@ -112,20 +342,20 @@ The <em>gold standard</em> design for three-arm trials refers to trials with an 
   \end{align*}
   with the non-inferiority margin $\Delta\in(0,1)$. 
   --> The next table provides an overview of the implemented models, the respective literature, and common choices of <span class="math inline">\(h\)</span>.</p>
-<table style="width:90%;">
+<table>
 <colgroup>
-<col width="12%"></col>
-<col width="20%"></col>
-<col width="22%"></col>
-<col width="22%"></col>
-<col width="12%"></col>
+<col width="13%"></col>
+<col width="23%"></col>
+<col width="25%"></col>
+<col width="25%"></col>
+<col width="13%"></col>
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Model</th>
 <th align="left">Literature</th>
 <th align="left">Distribution of <span class="math inline">\(X_{k,i}\)</span></th>
-<th align="left">Parameter vector <span class="math inline">\(\theta_k\)</span></th>
+<th>Parameter vector <span class="math inline">\(\theta_k\)</span></th>
 <th align="center">h</th>
 </tr>
 </thead>
@@ -134,59 +364,57 @@ The <em>gold standard</em> design for three-arm trials refers to trials with an 
 <td align="left">Normal - homoscedastic</td>
 <td align="left">Pigeot et al. (2003)</td>
 <td align="left"><span class="math inline">\(\mathcal{N}(\mu_k, \sigma^2)\)</span></td>
-<td align="left"><span class="math inline">\((\mu_k,\sigma^2)\)</span></td>
+<td><span class="math inline">\((\mu_k,\sigma^2)\)</span></td>
 <td align="center"><span class="math inline">\((\mu_k,\sigma^2) \mapsto \mu_k\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">Binary</td>
 <td align="left">Kieser and Friede (2007)</td>
 <td align="left"><span class="math inline">\(\mathcal{B}(1, p_k)\)</span></td>
-<td align="left"><span class="math inline">\(p_k\)</span></td>
+<td><span class="math inline">\(p_k\)</span></td>
 <td align="center"><span class="math inline">\(id, logit\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">Normal - heteroscedastic</td>
 <td align="left">Hasler et al. (2008)</td>
 <td align="left"><span class="math inline">\(\mathcal{N}(\mu_k, \sigma^{2}_{k})\)</span></td>
-<td align="left"><span class="math inline">\((\mu_k,\sigma_{k}^2)\)</span></td>
+<td><span class="math inline">\((\mu_k,\sigma_{k}^2)\)</span></td>
 <td align="center"><span class="math inline">\((\mu_k,\sigma_{k}^2) \mapsto \mu_k\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">Poisson</td>
 <td align="left">Mielke and Munk (2009)</td>
 <td align="left"><span class="math inline">\(\operatorname{Pois}(\mu_k)\)</span></td>
-<td align="left"><span class="math inline">\(\mu_k\)</span></td>
+<td><span class="math inline">\(\mu_k\)</span></td>
 <td align="center"><span class="math inline">\(id\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">Censored exponential</td>
 <td align="left">Mielke et al. (2009)</td>
 <td align="left"><span class="math inline">\(\min\left(\operatorname{Exp}(\mu_k), U_{k,i}\right)\)</span></td>
-<td align="left"><span class="math inline">\((\mu_k, p_k)\)</span></td>
+<td><span class="math inline">\((\mu_k, p_k)\)</span></td>
 <td align="center"><span class="math inline">\((\mu_k, p_k)\mapsto \log(\mu_k)\)</span></td>
 </tr>
 <tr class="even">
 <td align="left">Negative binomial</td>
 <td align="left">Mütze et al. (2016a)</td>
 <td align="left"><span class="math inline">\(\operatorname{NB}(\mu_k, \phi)\)</span></td>
-<td align="left"><span class="math inline">\((\mu_k, \phi)\)</span></td>
+<td><span class="math inline">\((\mu_k, \phi)\)</span></td>
 <td align="center"><span class="math inline">\((\mu_k,\phi) \mapsto \mu_k\)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">Non-parametric</td>
 <td align="left">Mütze et al. (2016b)</td>
 <td align="left">-</td>
-<td align="left"><span class="math inline">\((\mu_k,\sigma_{k}^2)\)</span></td>
+<td><span class="math inline">\((\mu_k,\sigma_{k}^2)\)</span></td>
 <td align="center"><span class="math inline">\((\mu_k,\sigma_{k}^2) \mapsto \mu_k\)</span></td>
 </tr>
 </tbody>
 </table>
-<p>For the censored exponential model, <span class="math inline">\(U_{k,i}\)</span> are the censoring times for which no particular distribution is assumed and <span class="math inline">\(p_k\)</span> are the probabilities of an observation being uncensored. The non-parameteric model does not assume any particular distribution for the data and <span class="math inline">\(\mu_k\)</span> and <span class="math inline">\(\sigma^2_k\)</span> are the expected value and the variance, respectively.</p>
-The hypothesis <span class="math inline">\(H_0\)</span> is rejected at significance level <span class="math inline">\(\alpha\)</span> if the Wald-type test statistic
-\begin{align*}
+<p>For the censored exponential model, <span class="math inline">\(U_{k,i}\)</span> are the censoring times for which no particular distribution is assumed and <span class="math inline">\(p_k\)</span> are the probabilities of an observation being uncensored. The non-parametric model does not assume any particular distribution for the data and <span class="math inline">\(\mu_k\)</span> and <span class="math inline">\(\sigma^2_k\)</span> are the expected value and the variance, respectively.</p>
+<p>The hypothesis <span class="math inline">\(H_0\)</span> is rejected at significance level <span class="math inline">\(\alpha\)</span> if the Wald-type test statistic <span class="math display">\[\begin{align*}
 T=\sqrt{n}\frac{\hat{\lambda}_{E}-\Delta \hat{\lambda}_{R} + (\Delta-1)\hat{\lambda}_{P} }{\hat{\sigma}} .
-\end{align*}
-<p>is smaller than the <span class="math inline">\(\alpha\)</span>-quantile of a normal distribution (binary, censored exponential, negative binomial, and Poisson model), t-distribution (normal models), or a permutation distribution (non-parametric model). For the normal and the non-parametric models the variance estimator <span class="math inline">\(\hat{\sigma}^{2}\)</span> is based on group specific sample variances. For the censored exponential model the variance is estimated by an unrestricted maximum-likelihood estimator. For the binarey, Poisson, and negative binomial model, the user can choose between an unrestricted maximum-likelihood variance estimator and a maximum-likelihood variance estimator restricted to the parameter space of the null hypothesis. The estimators <span class="math inline">\(\hat{\lambda}_{k}\)</span> are maximum-likelihood estimators for the parameteric models and group specific means for the non-parametric model.</p>
+\end{align*}\]</span> is smaller than the <span class="math inline">\(\alpha\)</span>-quantile of a normal distribution (binary, censored exponential, negative binomial, and Poisson model), t-distribution (normal models), or a permutation distribution (non-parametric model). For the normal and the non-parametric models the variance estimator <span class="math inline">\(\hat{\sigma}^{2}\)</span> is based on group specific sample variances. For the censored exponential model the variance is estimated by an unrestricted maximum-likelihood estimator. For the binary, Poisson, and negative binomial model, the user can choose between an unrestricted maximum-likelihood variance estimator and a maximum-likelihood variance estimator restricted to the parameter space of the null hypothesis. The estimators <span class="math inline">\(\hat{\lambda}_{k}\)</span> are maximum-likelihood estimators for the parametric models and group specific means for the non-parametric model.</p>
 </div>
 <div id="the-main-functions-in-threearmedtrials" class="section level2">
 <h2>The main functions in <em>ThreeArmedTrials</em></h2>
@@ -217,17 +445,13 @@ T=\sqrt{n}\frac{\hat{\lambda}_{E}-\Delta \hat{\lambda}_{R} + (\Delta-1)\hat{\lam
 </div>
 <div id="planning-and-analyzing-a-study-with-the-binary-data" class="section level2">
 <h2>Planning and analyzing a study with the binary data</h2>
-In this section, we exercise planning and analyzing a three-arm study in the <em>gold standard</em> design for binary data. The example is motivated by clinical trials in patients with depression. We define the binary endpoint <em>remission</em> as a HAM-D total score of less than or equal to 7. For more details see <a href="http://onlinelibrary.wiley.com/doi/10.1002/sim.2543/full">Kieser and Friede (2007)</a>. The parameter of interest <span class="math inline">\(p_k\)</span> is then the probability that remission is achieved. In contrast to the definition of the non-inferiority hypothesis above, larger values of <span class="math inline">\(p_k\)</span> are more desirable. Through the choice of the function <span class="math inline">\(h\)</span>, the parameter <span class="math inline">\(p_k\)</span> can be transformed such that larger values of the parameter are more desireable. From a practical point of view, the appropriate choices for <span class="math inline">\(h\)</span> are the identity function and the logit-function. Considering that the hypothesis above is defined for the case where smaller values are desired, we obtain the functions
-\begin{align*}
+<p>In this section, we exercise planning and analyzing a three-arm study in the <em>gold standard</em> design for binary data. The example is motivated by clinical trials in patients with depression. We define the binary endpoint <em>remission</em> as a HAM-D total score of less than or equal to 7. For more details see <a href="http://onlinelibrary.wiley.com/doi/10.1002/sim.2543/full">Kieser and Friede (2007)</a>. The parameter of interest <span class="math inline">\(p_k\)</span> is then the probability that remission is achieved. In contrast to the definition of the non-inferiority hypothesis above, larger values of <span class="math inline">\(p_k\)</span> are more desirable. Through the choice of the function <span class="math inline">\(h\)</span>, the parameter <span class="math inline">\(p_k\)</span> can be transformed such that larger values of the parameter are more desirable. From a practical point of view, the appropriate choices for <span class="math inline">\(h\)</span> are the identity function and the logit-function. Considering that the hypothesis above is defined for the case where smaller values are desired, we obtain the functions <span class="math display">\[\begin{align*}
   h(x)&amp;=-x,\\
   h(x)&amp;=-\log\left(\frac{x}{1-x}\right).
-\end{align*}
-With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypotheses
-\begin{align*}
+\end{align*}\]</span> With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypotheses <span class="math display">\[\begin{align*}
   H_{0,id}: p_{E}-p_{P} &amp;\leq \Delta(p_{R} - p_{P}) \\
   H_{0,logit}: \log\left(\frac{p_{E}}{1-p_{E}}\right) - \log\left(\frac{p_{P}}{1-p_{P}}\right) &amp;\leq \Delta \left(\log\left(\frac{p_{R}}{1-p_{R}}\right) - \log\left(\frac{p_{P}}{1-p_{P}}\right) \right) 
-\end{align*}
-<p>In the following, we will focus on planning and analyzing a three-arm trial with the hypothesis <span class="math inline">\(H_{0, logit}\)</span>.</p>
+\end{align*}\]</span> In the following, we will focus on planning and analyzing a three-arm trial with the hypothesis <span class="math inline">\(H_{0, logit}\)</span>.</p>
 <div id="designing-a-trial" class="section level3">
 <h3>Designing a trial</h3>
 <p>The trial will be designed in two steps. Firstly, we calculate an optimal sample size allocation for a given alternative. Then, we calculate the sample sample of the trial.</p>
@@ -238,14 +462,14 @@ With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypoth
 <li>The function <span class="math inline">\(h\)</span> which is used to define the hypothesis. Here, the function <span class="math inline">\(h\)</span> is defined as <code>h = function(x){-log(x/(1-x))}</code>.</li>
 </ul>
 <p>The optimal sample size allocation is calculated and given by</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">w &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">opt_alloc_RET</span>(<span class="dt">experiment =</span> <span class="fl">0.5</span>, 
-                                     <span class="dt">reference =</span> <span class="fl">0.3</span>, 
-                                     <span class="dt">placebo =</span> <span class="fl">0.2</span>, 
-                                     <span class="dt">Delta =</span> <span class="fl">0.8</span>, 
-                                     <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>, 
-                                     <span class="dt">h =</span> function(x){-<span class="kw">log</span>(x/(<span class="dv">1</span>-x))})</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">w &lt;-<span class="st"> </span>ThreeArmedTrials<span class="op">::</span><span class="kw">opt_alloc_RET</span>(<span class="dt">experiment =</span> <span class="fl">0.5</span>, </a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">                                     <span class="dt">reference =</span> <span class="fl">0.3</span>, </a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">                                     <span class="dt">placebo =</span> <span class="fl">0.2</span>, </a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">                                     <span class="dt">Delta =</span> <span class="fl">0.8</span>, </a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">                                     <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>, </a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">                                     <span class="dt">h =</span> <span class="cf">function</span>(x){<span class="op">-</span><span class="kw">log</span>(x<span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>x))})</a></code></pre></div>
 <p>The function <code>opt_alloc_RET()</code> returns a vector <span class="math inline">\((w_E^{*}, w_R^{*}, w_P^{*})\)</span> with the optimal sample size allocation.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(w)</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">print</span>(w)</a></code></pre></div>
 <pre><code>## [1] 0.4710601 0.4111749 0.1177650</code></pre>
 <p>For calculating the sample size of a trial with the function <code>power_RET()</code>, we require the following information:</p>
 <ul>
@@ -257,15 +481,15 @@ With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypoth
 <li>The function <span class="math inline">\(h\)</span> which is used to define the alternative as well as its inverse function <span class="math inline">\(h^{-1}\)</span>. The function <span class="math inline">\(h\)</span> is defined as <code>h = function(x){-log(x/(1-x))}</code> and its inverse function is defined as <code>h_inv = function(x){exp(-x)/(1+exp(-x))}</code>.</li>
 </ul>
 <p>Then, the function <code>power_RET()</code> returns the sample size as part of an object of class <em>power.htest</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ThreeArmedTrials::<span class="kw">power_RET</span>(<span class="dt">experiment =</span> <span class="fl">0.5</span>, <span class="dt">reference =</span> <span class="fl">0.3</span>, <span class="dt">placebo =</span> <span class="fl">0.2</span>,
-                            <span class="dt">Delta =</span> <span class="fl">0.8</span>,
-                            <span class="dt">sig_level =</span> <span class="fl">0.025</span>,
-                            <span class="dt">power =</span> <span class="fl">0.8</span>,
-                            <span class="dt">allocation =</span> w,
-                            <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>,
-                            <span class="dt">h =</span> function(x){-<span class="kw">log</span>(x/(<span class="dv">1</span>-x))},
-                            <span class="dt">h_inv =</span> function(x){<span class="kw">exp</span>(-x)/(<span class="dv">1</span>+<span class="kw">exp</span>(-x))},
-                            <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">ThreeArmedTrials<span class="op">::</span><span class="kw">power_RET</span>(<span class="dt">experiment =</span> <span class="fl">0.5</span>, <span class="dt">reference =</span> <span class="fl">0.3</span>, <span class="dt">placebo =</span> <span class="fl">0.2</span>,</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">                            <span class="dt">Delta =</span> <span class="fl">0.8</span>,</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">                            <span class="dt">sig_level =</span> <span class="fl">0.025</span>,</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">                            <span class="dt">power =</span> <span class="fl">0.8</span>,</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">                            <span class="dt">allocation =</span> w,</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">                            <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>,</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7">                            <span class="dt">h =</span> <span class="cf">function</span>(x){<span class="op">-</span><span class="kw">log</span>(x<span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>x))},</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">                            <span class="dt">h_inv =</span> <span class="cf">function</span>(x){<span class="kw">exp</span>(<span class="op">-</span>x)<span class="op">/</span>(<span class="dv">1</span><span class="op">+</span><span class="kw">exp</span>(<span class="op">-</span>x))},</a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">                            <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>)</a></code></pre></div>
 <pre><code>## 
 ##      Power calculation for Wald-type test (with restriced variance estimation) in three-arm trial with binary endpoints 
 ## 
@@ -285,17 +509,17 @@ With <span class="math inline">\(\lambda_k=h(p_k)\)</span>, we obtain the hypoth
 <div id="analyzing-a-trial" class="section level3">
 <h3>Analyzing a trial</h3>
 <p>Analyzing a three-arm trial with binary data will be demonstrated with data from a clinical trial in patients with depression which is included as the <code>remission</code> data set. The data set contains the three columns <code>experimental</code>, <code>reference</code>, and <code>placebo</code> with data from 86, 84, and 88 patients, respectively. In the experimental treatment group 43 patients (<span class="math inline">\(50\%\)</span>) went into remission, in the reference group 31 patients (<span class="math inline">\(36.9\%\)</span>) went into remission, and 26 patients (<span class="math inline">\(29.54\%\)</span>) in the placebo group went into remission. <br> We test the hypothesis specified with <span class="math inline">\(h\)</span> as the logit function. The analysis will be performed with the function <code>test_RET()</code>. The distribution is specified by the argument <code>distribution = &quot;binary&quot;</code>. Moreover, we select the non-inferiority margin <span class="math inline">\(\Delta=0.8\)</span> and the variance for the Wald-type test will be estimated restricted to the null hypothesis, i.e. <code>var_estimation = &quot;RML&quot;</code>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ThreeArmedTrials)
-noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">test_RET</span>(<span class="dt">xExp =</span> remission$experimental, 
-                                          <span class="dt">xRef =</span> remission$reference, 
-                                          <span class="dt">xPla =</span> remission$placebo, 
-                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, 
-                                          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>,
-                                          <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>,
-                                          <span class="dt">h =</span> function(x){-<span class="kw">log</span>(x/(<span class="dv">1</span>-x))},
-                                          <span class="dt">h_inv =</span> function(x){<span class="kw">exp</span>(-x)/(<span class="dv">1</span>+<span class="kw">exp</span>(-x))})</code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(ThreeArmedTrials)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials<span class="op">::</span><span class="kw">test_RET</span>(<span class="dt">xExp =</span> remission<span class="op">$</span>experimental, </a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">                                          <span class="dt">xRef =</span> remission<span class="op">$</span>reference, </a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">                                          <span class="dt">xPla =</span> remission<span class="op">$</span>placebo, </a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, </a>
+<a class="sourceLine" id="cb6-6" data-line-number="6">                                          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>,</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7">                                          <span class="dt">distribution =</span> <span class="st">&quot;binary&quot;</span>,</a>
+<a class="sourceLine" id="cb6-8" data-line-number="8">                                          <span class="dt">h =</span> <span class="cf">function</span>(x){<span class="op">-</span><span class="kw">log</span>(x<span class="op">/</span>(<span class="dv">1</span><span class="op">-</span>x))},</a>
+<a class="sourceLine" id="cb6-9" data-line-number="9">                                          <span class="dt">h_inv =</span> <span class="cf">function</span>(x){<span class="kw">exp</span>(<span class="op">-</span>x)<span class="op">/</span>(<span class="dv">1</span><span class="op">+</span><span class="kw">exp</span>(<span class="op">-</span>x))})</a></code></pre></div>
 <p>The output of <code>test_RET()</code> is an object of class <em>h.test</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(noninf_test)</code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">print</span>(noninf_test)</a></code></pre></div>
 <pre><code>## 
 ##  Wald-type test for the retention of effect hypothesis (with
 ##  restriced variance estimation) for the 'binary model'
@@ -322,12 +546,12 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 <li>Whether the variance in the Wald-type test will be estimated restricted to the null hypothesis (default and recommended) or unrestricted. Here we choose restricted (<code>&quot;RML&quot;</code>; unrestricted would be obtained with <code>&quot;ML</code>).</li>
 </ul>
 <p>To calculate the sample size, we use the <code>power_RET()</code> function with the parameter <code>distribution = &quot;poisson&quot;</code> to specify that our data is modeled as Poisson distributed. The output of the function <code>power_RET()</code> is an object of class <em>power.htest</em>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ThreeArmedTrials)
-<span class="kw">power_RET</span>(<span class="dt">experiment =</span> <span class="dv">15</span>, <span class="dt">reference =</span> <span class="dv">17</span>, <span class="dt">placebo =</span> <span class="dv">20</span>, 
-          <span class="dt">Delta =</span> <span class="fl">0.8</span>, <span class="dt">sig_level =</span> <span class="fl">0.025</span>, <span class="dt">power =</span> <span class="fl">0.8</span>, 
-          <span class="dt">allocation =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) /<span class="st"> </span><span class="dv">3</span>, 
-          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>, 
-          <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">library</span>(ThreeArmedTrials)</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="kw">power_RET</span>(<span class="dt">experiment =</span> <span class="dv">15</span>, <span class="dt">reference =</span> <span class="dv">17</span>, <span class="dt">placebo =</span> <span class="dv">20</span>, </a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">          <span class="dt">Delta =</span> <span class="fl">0.8</span>, <span class="dt">sig_level =</span> <span class="fl">0.025</span>, <span class="dt">power =</span> <span class="fl">0.8</span>, </a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">          <span class="dt">allocation =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) <span class="op">/</span><span class="st"> </span><span class="dv">3</span>, </a>
+<a class="sourceLine" id="cb9-5" data-line-number="5">          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>, </a>
+<a class="sourceLine" id="cb9-6" data-line-number="6">          <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</a></code></pre></div>
 <pre><code>## 
 ##      Power calculation for Wald-type test (with restriced variance estimation) in three-arm trial with Poisson endpoints 
 ## 
@@ -342,23 +566,23 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 ##              nExp = 32
 ##              nRef = 32
 ##              nPla = 32</code></pre>
-<p>First the setup is described with a note. Then, the output lists of the numeric input parameters as well as the caculated total sample size <code>n</code> and the group sample sizes <code>nExp</code>, <code>nRef</code>, and <code>nPla</code>. <br><br> Here, we planned the sample size for a balanced design, i.e. <span class="math inline">\(n_E:n_R:n_P=1:1:1\)</span>. Alternatively, the sample size allocation could be calculated for a given alternative such that the power is maximized. The resulting sample size allocation is referred to as the optimal sample size allocation. The optimal sample size allocation can be calculated with the function <code>opt_alloc_RET()</code>. Thereto, the vector of rates <span class="math inline">\((\mu_{E}, \mu_{R}, \mu_{P})\)</span>, the non-inferiority margin <span class="math inline">\(\Delta\)</span>, and the distribution must be specified. For the example from above, the optimal sample size allocation can be calculated by:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">opt_alloc_RET</span>(<span class="dt">experiment =</span> <span class="dv">15</span>, 
-              <span class="dt">reference =</span> <span class="dv">17</span>, 
-              <span class="dt">placebo =</span> <span class="dv">20</span>, 
-              <span class="dt">Delta =</span> <span class="fl">0.8</span>,  
-              <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</code></pre></div>
+<p>First the setup is described with a note. Then, the output lists of the numeric input parameters as well as the calculated total sample size <code>n</code> and the group sample sizes <code>nExp</code>, <code>nRef</code>, and <code>nPla</code>. <br><br> Here, we planned the sample size for a balanced design, i.e. <span class="math inline">\(n_E:n_R:n_P=1:1:1\)</span>. Alternatively, the sample size allocation could be calculated for a given alternative such that the power is maximized. The resulting sample size allocation is referred to as the optimal sample size allocation. The optimal sample size allocation can be calculated with the function <code>opt_alloc_RET()</code>. Thereto, the vector of rates <span class="math inline">\((\mu_{E}, \mu_{R}, \mu_{P})\)</span>, the non-inferiority margin <span class="math inline">\(\Delta\)</span>, and the distribution must be specified. For the example from above, the optimal sample size allocation can be calculated by:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">opt_alloc_RET</span>(<span class="dt">experiment =</span> <span class="dv">15</span>, </a>
+<a class="sourceLine" id="cb11-2" data-line-number="2">              <span class="dt">reference =</span> <span class="dv">17</span>, </a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">              <span class="dt">placebo =</span> <span class="dv">20</span>, </a>
+<a class="sourceLine" id="cb11-4" data-line-number="4">              <span class="dt">Delta =</span> <span class="fl">0.8</span>,  </a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">              <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</a></code></pre></div>
 <pre><code>## [1] 0.4801678 0.4089422 0.1108900</code></pre>
-<p>The function <code>opt_alloc_RET()</code> returns the vector with the optimal sample size allocation. The first element referes to the experimental treatment, the second to the reference, and the third to the placebo.</p>
+<p>The function <code>opt_alloc_RET()</code> returns the vector with the optimal sample size allocation. The first element refers to the experimental treatment, the second to the reference, and the third to the placebo.</p>
 </div>
 <div id="analyzing-a-trial-1" class="section level3">
 <h3>Analyzing a trial</h3>
-<p>As an example for a trial with Poisson data we considered the dataset <code>seizures</code> which is included in the <em>ThreeArmedTrials</em> package. The <code>seizures</code> dataset contains the number of seizures per patient for three different add-on treatments, i.e. placebo, reference, and experimental treatment, evaluating an anti-epileptic drug. The dataset includes 32 patiens.</p>
+<p>As an example for a trial with Poisson data we considered the dataset <code>seizures</code> which is included in the <em>ThreeArmedTrials</em> package. The <code>seizures</code> dataset contains the number of seizures per patient for three different add-on treatments, i.e. placebo, reference, and experimental treatment, evaluating an anti-epileptic drug. The dataset includes 32 patients.</p>
 <table>
 <caption>First six entries of seizures dataset</caption>
 <thead>
 <tr class="header">
-<th align="left"></th>
+<th></th>
 <th align="right">pla</th>
 <th align="right">ref</th>
 <th align="right">exp</th>
@@ -366,37 +590,37 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">1</td>
+<td>1</td>
 <td align="right">21</td>
 <td align="right">13</td>
 <td align="right">14</td>
 </tr>
 <tr class="even">
-<td align="left">2</td>
+<td>2</td>
 <td align="right">12</td>
 <td align="right">14</td>
 <td align="right">13</td>
 </tr>
 <tr class="odd">
-<td align="left">3</td>
+<td>3</td>
 <td align="right">21</td>
 <td align="right">5</td>
 <td align="right">11</td>
 </tr>
 <tr class="even">
-<td align="left">4</td>
+<td>4</td>
 <td align="right">26</td>
 <td align="right">19</td>
 <td align="right">18</td>
 </tr>
 <tr class="odd">
-<td align="left">5</td>
+<td>5</td>
 <td align="right">20</td>
 <td align="right">17</td>
 <td align="right">14</td>
 </tr>
 <tr class="even">
-<td align="left">6</td>
+<td>6</td>
 <td align="right">17</td>
 <td align="right">21</td>
 <td align="right">18</td>
@@ -404,14 +628,14 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 </tbody>
 </table>
 <p>For the <code>seizures</code> data set non-inferiority of the experimental treatment compared to the reference will be tested with a non-inferiority margion of <span class="math inline">\(\Delta=0.8\)</span>. The standard deviation for the Wald-type test will be estimated using a maximum-likelihood estimator restricted to the parameter space of the null hypothesis. Thus, we set the parameter <code>var_estimation = &quot;RML&quot;</code>. For the unrestricted estimator, <code>var_estimation = &quot;ML&quot;</code> can be used. The hypothesis test is performed with the function <code>test_RET()</code>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">test_RET</span>(<span class="dt">xExp =</span> seizures$exp, 
-                                          <span class="dt">xRef =</span> seizures$ref, 
-                                          <span class="dt">xPla =</span> seizures$pla, 
-                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, 
-                                          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>,
-                                          <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials<span class="op">::</span><span class="kw">test_RET</span>(<span class="dt">xExp =</span> seizures<span class="op">$</span>exp, </a>
+<a class="sourceLine" id="cb13-2" data-line-number="2">                                          <span class="dt">xRef =</span> seizures<span class="op">$</span>ref, </a>
+<a class="sourceLine" id="cb13-3" data-line-number="3">                                          <span class="dt">xPla =</span> seizures<span class="op">$</span>pla, </a>
+<a class="sourceLine" id="cb13-4" data-line-number="4">                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, </a>
+<a class="sourceLine" id="cb13-5" data-line-number="5">                                          <span class="dt">var_estimation =</span> <span class="st">&quot;RML&quot;</span>,</a>
+<a class="sourceLine" id="cb13-6" data-line-number="6">                                          <span class="dt">distribution =</span> <span class="st">&quot;poisson&quot;</span>)</a></code></pre></div>
 <p>The output of the function <code>test_RET()</code> is an object of class <em>h.test</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(noninf_test)</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">print</span>(noninf_test)</a></code></pre></div>
 <pre><code>## 
 ##  Wald-type test for the retention of effect hypothesis (with
 ##  restriced variance estimation) for the 'poisson model'
@@ -431,7 +655,7 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 <caption>First six entries of GElesions dataset</caption>
 <thead>
 <tr class="header">
-<th align="left"></th>
+<th></th>
 <th align="right">experimental</th>
 <th align="right">reference</th>
 <th align="right">placebo</th>
@@ -439,37 +663,37 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">1</td>
+<td>1</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">3</td>
 </tr>
 <tr class="even">
-<td align="left">2</td>
+<td>2</td>
 <td align="right">10</td>
 <td align="right">6</td>
 <td align="right">0</td>
 </tr>
 <tr class="odd">
-<td align="left">3</td>
+<td>3</td>
 <td align="right">0</td>
 <td align="right">3</td>
 <td align="right">15</td>
 </tr>
 <tr class="even">
-<td align="left">4</td>
+<td>4</td>
 <td align="right">2</td>
 <td align="right">0</td>
 <td align="right">20</td>
 </tr>
 <tr class="odd">
-<td align="left">5</td>
+<td>5</td>
 <td align="right">0</td>
 <td align="right">8</td>
 <td align="right">0</td>
 </tr>
 <tr class="even">
-<td align="left">6</td>
+<td>6</td>
 <td align="right">0</td>
 <td align="right">0</td>
 <td align="right">0</td>
@@ -477,15 +701,15 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 </tbody>
 </table>
 <p>We test non-inferiority of the experimental treatment compared to the reference with a margin of <span class="math inline">\(\Delta=0.8\)</span>. Additionally, we must specify the number of permutations considered when calculating the rejection area. Here, we choose <code>n_perm = 50000</code>. As before, hypothesis is test with the function <code>test_RET()</code>:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">12345</span>)
-noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">test_RET</span>(<span class="dt">xExp =</span> GElesions$experimental, 
-                                          <span class="dt">xRef =</span> GElesions$reference, 
-                                          <span class="dt">xPla =</span> GElesions$placebo, 
-                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, 
-                                          <span class="dt">n_perm =</span> <span class="dv">50000</span>,
-                                          <span class="dt">distribution =</span> <span class="st">&quot;nonparametric&quot;</span>)</code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">12345</span>)</a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials<span class="op">::</span><span class="kw">test_RET</span>(<span class="dt">xExp =</span> GElesions<span class="op">$</span>experimental, </a>
+<a class="sourceLine" id="cb16-3" data-line-number="3">                                          <span class="dt">xRef =</span> GElesions<span class="op">$</span>reference, </a>
+<a class="sourceLine" id="cb16-4" data-line-number="4">                                          <span class="dt">xPla =</span> GElesions<span class="op">$</span>placebo, </a>
+<a class="sourceLine" id="cb16-5" data-line-number="5">                                          <span class="dt">Delta =</span> <span class="fl">0.8</span>, </a>
+<a class="sourceLine" id="cb16-6" data-line-number="6">                                          <span class="dt">n_perm =</span> <span class="dv">50000</span>,</a>
+<a class="sourceLine" id="cb16-7" data-line-number="7">                                          <span class="dt">distribution =</span> <span class="st">&quot;nonparametric&quot;</span>)</a></code></pre></div>
 <p>The output of the function <code>test_RET()</code> is an object of class <em>h.test</em>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(noninf_test)</code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1"><span class="kw">print</span>(noninf_test)</a></code></pre></div>
 <pre><code>## 
 ##  Studentized permutation test for the retention of effect
 ##  hypothesis
@@ -506,8 +730,8 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
 <li>M. Mielke, A. Munk, and A. Schacht. <em>The assessment of non‐inferiority in a gold standard design with censored, exponentially distributed endpoints.</em> Statistics in Medicine 27:5093-5110 (2008).</li>
 <li>M. Mielke and A. Munk. <em>The assessment and planning of non-inferiority trials for retention of effect hypotheses-towards a general approach.</em> arXiv preprint arXiv:0912.4169 (2009).</li>
 <li>M. Mielke. <em>Maximum Likelihood Theory for Retention of Effect Non-inferiority Trials</em></li>
-<li>T. Mütze, A. Munk, T. Friede. <em>Design and analysis of three‐arm trials with negative binomially distributed endpoints</em>. Statistics in Medicine. 35:505-521 (2016a).</li>
-<li>T. Mütze, F. Konietschke, T. Friede. <em>A studentized permutation test for three-arm trials in the `gold standard’ design</em>. Submitted. (2016b).</li>
+<li>T. Mütze, A. Munk, T. Friede. <em>Design and analysis of three‐arm trials with negative binomially distributed endpoints</em>. Statistics in Medicine. 35:505-521 (2016).</li>
+<li>T. Mütze, F. Konietschke, A. Munk, T. Friede. <em>A studentized permutation test for three-arm trials in the `gold standard’ design</em>. Statistics in Medicine. 36:883-898 (2017).</li>
 </ul>
 </div>
 
@@ -518,7 +742,7 @@ noninf_test &lt;-<span class="st"> </span>ThreeArmedTrials::<span class="kw">tes
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

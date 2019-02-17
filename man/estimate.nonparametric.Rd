@@ -10,4 +10,3 @@
 Parameter estimation for Wald-type test in non-parametric model
 }
 \keyword{internal}
-

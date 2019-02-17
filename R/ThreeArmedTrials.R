@@ -15,7 +15,6 @@
 #' A detailed discussion of the hypothesis can be found in Hauschke and Pigeot (2005).
 #'
 #' The statistical theory for negative binomial distributed endpoint has been developed by Muetze et al. (2015).
-#' @useDynLib ThreeArmedTrials
 #' @import stats
 #' @import MASS
 #' @author Tobias Muetze  \email{tobias.muetze@@outlook.com}

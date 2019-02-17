@@ -18,4 +18,3 @@ loglikelihood_binary(p, xExp, xRef, xPla)
 \description{
 log likelihood of Bernoulli function
 }
-

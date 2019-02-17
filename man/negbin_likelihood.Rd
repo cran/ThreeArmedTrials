@@ -22,4 +22,3 @@ numeric
 negative log-likelihood function of the three-arm study with negative binomial endpoints
 }
 \keyword{internal}
-

@@ -2,7 +2,7 @@
 % Please edit documentation in R/waldtype_power.R
 \name{power_RET}
 \alias{power_RET}
-\title{Power related calcuations for three-arm clinical trials}
+\title{Power related calculations for three-arm clinical trials}
 \usage{
 power_RET(experiment, reference, placebo, Delta, sig_level = NULL,
   power = NULL, n = NULL, allocation = c(1/3, 1/3, 1/3),
@@ -71,4 +71,3 @@ power_RET(experiment = 15, reference = 17, placebo = 20,
 \keyword{power}
 \keyword{samplesize}
 \keyword{waldtype}
-

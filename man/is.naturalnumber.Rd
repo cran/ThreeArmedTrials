@@ -14,4 +14,3 @@ is.naturalnumber(x, tol = .Machine$double.eps^0.5)
 \description{
 check if input is natural number
 }
-

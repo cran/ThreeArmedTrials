@@ -4,8 +4,8 @@
 \alias{limit_RML_poisson}
 \title{limit_RML_poisson}
 \usage{
-limit_RML_poisson(rateExp1, rateRef1, ratePla1, Delta, allocation = c(1/3,
-  1/3, 1/3))
+limit_RML_poisson(rateExp1, rateRef1, ratePla1, Delta,
+  allocation = c(1/3, 1/3, 1/3))
 }
 \arguments{
 \item{rateExp1}{Experimental treatment group rate in the (assumed) alternative}
@@ -22,4 +22,3 @@ limit_RML_poisson(rateExp1, rateRef1, ratePla1, Delta, allocation = c(1/3,
 Calculate limit of RML for Poisson endpoints
 }
 \keyword{internal}
-

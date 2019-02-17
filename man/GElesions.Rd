@@ -17,4 +17,3 @@ GElesions
 A (fictional) dataset containing the total number of new galodinium-enhancing lesions for different treatments for multiple sclerosis.
 }
 \keyword{datasets}
-

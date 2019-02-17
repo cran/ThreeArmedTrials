@@ -10,4 +10,3 @@
 Default variance calculation for Wald-type test
 }
 \keyword{internal}
-

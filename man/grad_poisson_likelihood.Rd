@@ -4,10 +4,10 @@
 \alias{grad_poisson_likelihood}
 \title{grad_poisson_likelihood}
 \usage{
-grad_poisson_likelihood(theta, n_exp, n_ref, n_pla, sum_exp, sum_ref, sum_pla)
+grad_poisson_likelihood(theta, n_exp, n_ref, n_pla, sum_exp, sum_ref,
+  sum_pla)
 }
 \description{
 gradient of negative log-likelihood function for poisson endpoints
 }
 \keyword{internal}
-

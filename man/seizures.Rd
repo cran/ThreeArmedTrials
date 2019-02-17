@@ -17,4 +17,3 @@ seizures
 A (fictional) dataset containing the number of seizures per patient for different add-on treatments evaluating an anti-epileptic drug.
 }
 \keyword{datasets}
-

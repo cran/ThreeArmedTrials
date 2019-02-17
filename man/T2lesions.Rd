@@ -17,4 +17,3 @@ T2lesions
 A (fictional) dataset containing the number of new and enlarging T2 lesions per patient for different treatments for multiple sclerosis.
 }
 \keyword{datasets}
-

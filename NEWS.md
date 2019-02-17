@@ -1,8 +1,21 @@
 ---
 title: "<center>News for *ThreeArmedTrials*</center>"
 author: "<center>Tobias Mütze</center>"
-date: "<center>May 11th 2016</center>"
+date: "<center>September 09th 2016</center>"
 ---
+
+# ThreeArmedTrials 1.0-3
+* Added references to description
+* Changed method for estimation negative binomial shape parameter
+* Fixed note related to unregistered native routines
+* Functions taNegbin.XYZ were removed 
+* Fixed typos in vignette
+
+# ThreeArmedTrials 1.0-2
+* Fixed bug in power calculation of exponential data
+
+# ThreeArmedTrials 1.0-1
+* Fixed bug in input check for power calculation of normal data
 
 # ThreeArmedTrials 1.0-0
 
@@ -14,6 +27,6 @@ date: "<center>May 11th 2016</center>"
 
 # ThreeArmedTrials 0.1-0
 
-* Package includes all functions for plannung and analyzing trials with negative binomial endpoints
+* Package includes all functions for planning and analyzing trials with negative binomial endpoints
 * First version published on CRAN
 

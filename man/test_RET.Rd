@@ -37,9 +37,9 @@ experimental treatment versus reference treatment with respect to placebo.
 \details{
 Additional parameters include \code{distribution} and \code{var_estimation}. \cr
 The parameter \code{distribution} is a character string and indicates
-whether a parameteric model should be used. If not specified retention of
+whether a parametric model should be used. If not specified retention of
 effect hypothesis is tested using sample means and variances.
-The follwing options exist:
+The following options exist:
 \code{"poisson"} (Poisson distribution),
 \code{"negbin"} (negative binomial distribution),
 \code{"normal"} (normal distribution),
@@ -49,7 +49,7 @@ If the parameter \code{distribution} is not specified
 the effect and the variance for the test statistic are estimated
 by the sample means and sample variances.\cr
 The parameter \code{var_estimation} defines how the variance is estimated
-in the parameteric models \code{"poisson"} and \code{"negbin"}.
+in the parametric models \code{"poisson"} and \code{"negbin"}.
 The follwing options exist:
 \code{RML} for the restricted maximum-likelihood estimator
 and \code{ML} (default) for the unrestricted maximum-likelihood estimator.
@@ -114,4 +114,3 @@ Statistics in Medicine, 35(4):505-521.
 }
 \keyword{test}
 \keyword{waldtype}
-

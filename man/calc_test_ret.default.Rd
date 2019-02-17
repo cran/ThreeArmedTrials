@@ -10,4 +10,3 @@
 Default method for performing Wald-type test
 }
 \keyword{internal}
-

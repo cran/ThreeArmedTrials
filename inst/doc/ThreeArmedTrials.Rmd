@@ -77,7 +77,7 @@ Let $h:\Theta^d\to \mathbb{R}$ be a monotonic function and $\lambda_k:=h(\theta_
 
 
 For the censored exponential model, $U_{k,i}$ are the censoring times for which no particular distribution is assumed and $p_k$ are the probabilities of an observation being uncensored. 
-The non-parameteric model does not assume any particular distribution for the data and $\mu_k$ and $\sigma^2_k$ are the expected value and the variance, respectively.
+The non-parametric model does not assume any particular distribution for the data and $\mu_k$ and $\sigma^2_k$ are the expected value and the variance, respectively.
   
 The hypothesis $H_0$ is rejected at significance level $\alpha$ if the Wald-type test statistic 
 \begin{align*}
@@ -86,8 +86,8 @@ T=\sqrt{n}\frac{\hat{\lambda}_{E}-\Delta \hat{\lambda}_{R} + (\Delta-1)\hat{\lam
 is smaller than the $\alpha$-quantile of a normal distribution (binary, censored exponential, negative binomial, and Poisson model), t-distribution (normal models), or a permutation distribution (non-parametric model).
 For the normal and the non-parametric models the variance estimator $\hat{\sigma}^{2}$ is based on group specific sample variances. 
 For the censored exponential model the variance is estimated by an unrestricted maximum-likelihood estimator. 
-For the binarey, Poisson, and negative binomial model, the user can choose between an unrestricted maximum-likelihood variance estimator and a maximum-likelihood variance estimator restricted to the parameter space of the null hypothesis. 
-The estimators $\hat{\lambda}_{k}$ are maximum-likelihood estimators for the parameteric models and group specific means for the non-parametric model.
+For the binary, Poisson, and negative binomial model, the user can choose between an unrestricted maximum-likelihood variance estimator and a maximum-likelihood variance estimator restricted to the parameter space of the null hypothesis. 
+The estimators $\hat{\lambda}_{k}$ are maximum-likelihood estimators for the parametric models and group specific means for the non-parametric model.
   
 ## The main functions in *ThreeArmedTrials*
   
@@ -113,7 +113,7 @@ For more details see
 <a href="http://onlinelibrary.wiley.com/doi/10.1002/sim.2543/full">Kieser and Friede (2007)</a>.
 The parameter of interest $p_k$ is then the probability that remission is achieved. 
 In contrast to the definition of the non-inferiority hypothesis above, larger values of $p_k$ are more desirable. 
-Through the choice of the function $h$, the parameter $p_k$ can be transformed such that larger values of the parameter are more desireable. 
+Through the choice of the function $h$, the parameter $p_k$ can be transformed such that larger values of the parameter are more desirable. 
 From a practical point of view, the appropriate choices for $h$ are the identity function and the logit-function. 
 Considering that the hypothesis above is defined for the case where smaller values are desired, we obtain the functions
 \begin{align*}
@@ -240,7 +240,7 @@ power_RET(experiment = 15, reference = 17, placebo = 20,
 ```
 
 First the setup is described with a note. 
-Then, the output lists of the numeric input parameters as well as the caculated total sample size `n` and the group sample sizes `nExp`, `nRef`, and `nPla`. <br><br>
+Then, the output lists of the numeric input parameters as well as the calculated total sample size `n` and the group sample sizes `nExp`, `nRef`, and `nPla`. <br><br>
 Here, we planned the sample size for a balanced design, i.e. $n_E:n_R:n_P=1:1:1$. 
 Alternatively, the sample size allocation could be calculated for a given alternative such that the power is maximized. 
 The resulting sample size allocation is referred to as the optimal sample size allocation.
@@ -256,13 +256,13 @@ opt_alloc_RET(experiment = 15,
 ```
 
 The function `opt_alloc_RET()` returns  the vector with the optimal sample size allocation. 
-The first element referes to the experimental treatment, the second to the reference, and the third to the placebo.
+The first element refers to the experimental treatment, the second to the reference, and the third to the placebo.
 
 ### Analyzing a trial
 
 As an example for a trial with Poisson data we considered the dataset `seizures` which is included in the *ThreeArmedTrials* package. 
 The `seizures` dataset contains the number of seizures per patient for three different add-on treatments, i.e. placebo, reference, and experimental treatment, evaluating an anti-epileptic drug. 
-The dataset includes 32 patiens.
+The dataset includes 32 patients.
 
 ```{r, results = 'asis', echo = FALSE}
 data(seizures)
@@ -329,5 +329,5 @@ Here, we see that due to the p-value of about 34\%, non-inferiority could not be
 * M. Mielke, A. Munk, and A. Schacht. *The assessment of non‐inferiority in a gold standard design with censored, exponentially distributed endpoints.* Statistics in Medicine 27:5093-5110 (2008).
 * M. Mielke and A. Munk. *The assessment and planning of non-inferiority trials for retention of effect hypotheses-towards a general approach.* arXiv preprint arXiv:0912.4169 (2009).
 * M. Mielke. *Maximum Likelihood Theory for Retention of Effect Non-inferiority Trials*
-* T. Mütze, A. Munk, T. Friede. *Design and analysis of three‐arm trials with negative binomially distributed endpoints*. Statistics in Medicine. 35:505-521 (2016a). 
-* T. Mütze, F. Konietschke, T. Friede. *A studentized permutation test for three-arm trials in the `gold standard' design*. Submitted. (2016b). 
+* T. Mütze, A. Munk, T. Friede. *Design and analysis of three‐arm trials with negative binomially distributed endpoints*. Statistics in Medicine. 35:505-521 (2016). 
+* T. Mütze, F. Konietschke, A. Munk, T. Friede. *A studentized permutation test for three-arm trials in the `gold standard' design*. Statistics in Medicine. 36:883-898 (2017). 

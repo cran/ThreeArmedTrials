@@ -11,4 +11,3 @@ Method for performing test of retention of effect hypothesis for
 normally distributed endpoints
 }
 \keyword{internal}
-

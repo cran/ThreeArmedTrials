@@ -13,4 +13,3 @@ calc_test_ret(x, Delta, data_name, ...)
 generic function for performing the Wald-type test
 }
 \keyword{internal}
-

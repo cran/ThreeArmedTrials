@@ -10,4 +10,3 @@
 Parameter estimation for Wald-type test with normally distributed endpoints
 }
 \keyword{internal}
-

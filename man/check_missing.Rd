@@ -14,4 +14,3 @@ check_missing(args = NULL, envir = parent.frame())
 \description{
 Check if all arguments are defined
 }
-

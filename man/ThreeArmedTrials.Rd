@@ -21,11 +21,10 @@ A detailed discussion of the hypothesis can be found in Hauschke and Pigeot (200
 
 The statistical theory for negative binomial distributed endpoint has been developed by Muetze et al. (2015).
 }
-\author{
-Tobias Muetze  \email{tobias.muetze@outlook.com}
-}
 \references{
 Hauschke, D. and Pigeot, I. 2005. \dQuote{Establishing efficacy of a new experimental treatment in the 'gold standard' design.} Biometrical Journal 47, 782--786.
   Muetze, T. et al. 2015. \dQuote{Design and analysis of three-arm trials with negative binomially distributed endpoints.} \emph{Submitted.}
 }
-
+\author{
+Tobias Muetze  \email{tobias.muetze@outlook.com}
+}

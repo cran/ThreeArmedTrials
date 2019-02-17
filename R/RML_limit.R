@@ -106,17 +106,20 @@ limit_RML_poisson <- function(rateExp1, rateRef1, ratePla1, Delta, allocation = 
 
 
 
-# title Limit of restricted maximum-likelihood estimator in case of negative binomial distributed endpoints
-# param rateExp1 A numeric value specifying the rate of the experimental treatment group in the alternative hypothesis
-# param rateRef1 A numeric value specifying the rate of the reference treatment group in the alternative hypothesis
-# param ratePla1 A numeric value specifying the rate of the placebo treatment group in the alternative hypothesis
-# param shape1 A numeric value specifying the shape parameter
-# param Delta A numeric value specifying the non-inferiority/superiority margin
-# param allocation A (non-empty) vector specifying the sample size allocation (wExp, wRef, wPla)
-# return A list containing the following components:
-# item{rateExp0, rateRef0, rateRef0}{The limit of the maximum-likelihood estimator for the rates when estimed restricted to the boundary of the null hypothesis}
-# item{shape0}{The limit of the maximum-likelihood estimator for the shape parameter when estimed restricted to the boundary of the null hypothesis}
-# item{sigma2.rest}{The limit of the maximum-likelihood variance estimator for the Wald-type test when restricted to the boundary of the null hypothesis}
+#' @title taNegbin.LimitRestMLE
+#' @description Limit of restricted maximum-likelihood estimator in case of negative binomial distributed endpoints
+#' @param rateExp1 A numeric value specifying the rate of the experimental treatment group in the alternative hypothesis
+#' @param rateRef1 A numeric value specifying the rate of the reference treatment group in the alternative hypothesis
+#' @param ratePla1 A numeric value specifying the rate of the placebo treatment group in the alternative hypothesis
+#' @param shape1 A numeric value specifying the shape parameter
+#' @param Delta A numeric value specifying the non-inferiority/superiority margin
+#' @param allocation A (non-empty) vector specifying the sample size allocation (wExp, wRef, wPla)
+#' @return A list containing the following components:
+#' \item{rateExp0, rateRef0, rateRef0}{The limit of the maximum-likelihood estimator for the rates when estimed restricted to the boundary of the null hypothesis}
+#' \item{shape0}{The limit of the maximum-likelihood estimator for the shape parameter when estimated restricted to the boundary of the null hypothesis}
+#' \item{sigma2.rest}{The limit of the maximum-likelihood variance estimator for the Wald-type test when restricted to the boundary of the null hypothesis}
+#' @import stats
+#' @keywords internal
 taNegbin.LimitRestMLE <- function(rateExp1, rateRef1, ratePla1, shape1, Delta, allocation = c(1/3, 1/3, 1/3)){
 
   KL.Divergenz <- function(zeta, para.alternat, Delta, w){

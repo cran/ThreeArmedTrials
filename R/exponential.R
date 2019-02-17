@@ -29,7 +29,7 @@ estimate.exponential <- function(x, Delta, ...) {
 #' @keywords internal
 calc_power_ret.exponential <- function(x, Delta, allocation, n = NULL, power = NULL, sig_level = NULL, ...) {
 
-  h <- "log"
+  h <- log
 
   if (any(c(length(x$para_exp), length(x$para_ref), length(x$para_pla)) != 2)) {
     stop("Two parameters must be defined for power related calculations for exponential endpoints.")
@@ -54,21 +54,18 @@ calc_power_ret.exponential <- function(x, Delta, allocation, n = NULL, power = N
   }
 
   # Calculate effect
-  effect <- sum(rates * c(1, -Delta, Delta -1))
+  effect <- sum(h(rates) * c(1, -Delta, Delta -1))
   if( effect > -1e-16 ){
     stop('Parameter vector is not located in the alternative.')
   }
 
   w <- allocation
   # Calculate variance
-  var_teststat <- sum(c(1, Delta^2, (Delta -1)^2) / w * p_uncensor)
+  var_teststat <- sum(c(1, Delta^2, (Delta -1)^2) / (w * p_uncensor))
 
 
   # Define 'method' for output
   method <- 'Power calculation for Wald-type test in three-arm trial with censored exponential endpoints'
-
-  # Define 'method' for output
-  method <- 'Power calculation for Wald-type test in three-arm trial with Poisson endpoints'
 
   # Calculate missing parameter
   if (is.null(n)) {
@@ -81,7 +78,7 @@ calc_power_ret.exponential <- function(x, Delta, allocation, n = NULL, power = N
       w <- c(nExp, nRef, nPla) / n
       note <- "'allocation' has been recalculated."
     }
-    var_teststat <- sum(rates * c(1, Delta^2, (Delta -1)^2) / w)
+    var_teststat <- sum(c(1, Delta^2, (Delta -1)^2) / (w * p_uncensor))
     power <- pnorm(qnorm(sig_level) - sqrt(n) * effect / sqrt(var_teststat), mean = 0, sd = 1)
   }
   if (is.null(power)) {
