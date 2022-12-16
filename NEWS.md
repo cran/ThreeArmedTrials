@@ -1,8 +1,13 @@
 ---
 title: "<center>News for *ThreeArmedTrials*</center>"
 author: "<center>Tobias Mütze</center>"
-date: "<center>September 09th 2016</center>"
+date: "<center>December 12, 2022</center>"
 ---
+
+# ThreeArmedTrials 1.0-4
+* Fixed HTML validation problems in estimate.html
+* Removed links in vignette
+* Minor internal change on handling distribution attribute
 
 # ThreeArmedTrials 1.0-3
 * Added references to description

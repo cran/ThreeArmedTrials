@@ -4,12 +4,14 @@
 \name{GElesions}
 \alias{GElesions}
 \title{Total number of new galodinium-enhancing lesions.}
-\format{A data frame with 50 rows and 3 variables:
+\format{
+A data frame with 50 rows and 3 variables:
 \describe{
   \item{placebo}{Placebo group}
   \item{reference}{Reference group}
   \item{experimental}{Experimental treatment group}
-}}
+}
+}
 \usage{
 GElesions
 }

@@ -25,6 +25,7 @@ estimate.default <- function(x, Delta, ...) {
 
 #' @title test_ret.default
 #' @description Default method for performing Wald-type test
+#' @importFrom methods is
 #' @keywords internal
 calc_test_ret.default <- function(x, Delta, data_name, ...) {
 
@@ -41,8 +42,8 @@ calc_test_ret.default <- function(x, Delta, data_name, ...) {
 
   # Rename parameter vector
   names(x$group_response) <- c('Mean Exp', 'Mean Ref', 'Mean Pla')
-
-  if (class(x) != "list") {
+  
+  if (is(x)[1] != "list") {
     var_estimation <- list(...)$var_estimation
     if (!is.null(var_estimation)) {
       var_text <- switch(var_estimation,

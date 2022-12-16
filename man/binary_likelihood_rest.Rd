@@ -4,8 +4,18 @@
 \alias{binary_likelihood_rest}
 \title{binary_likelihood_rest}
 \usage{
-binary_likelihood_rest(theta, Delta, n_exp, n_ref, n_pla, sum_exp, sum_ref,
-  sum_pla, h, h_inv)
+binary_likelihood_rest(
+  theta,
+  Delta,
+  n_exp,
+  n_ref,
+  n_pla,
+  sum_exp,
+  sum_ref,
+  sum_pla,
+  h,
+  h_inv
+)
 }
 \arguments{
 \item{theta}{vector of rates}

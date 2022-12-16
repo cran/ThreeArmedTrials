@@ -10,12 +10,10 @@ estimate(x, Delta, ...)
 }
 \arguments{
 \item{x}{list with entries experiment, reference, placebo}
-
-\item{x}{list with entries experiment, reference, placebo}
 }
 \description{
 generic function for calculating the variance
 
-generic function for calcuation the variance
+generic function for calculating the variance
 }
 \keyword{internal}

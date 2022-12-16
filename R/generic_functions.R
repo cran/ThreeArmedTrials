@@ -1,12 +1,12 @@
 #' @title estimate
-#' @description generic function for calcuation the variance
+#' @description generic function for calculating the variance
 #' @param x list with entries experiment, reference, placebo
 #' @keywords internal
 estimate <- function(x, Delta, ...) UseMethod("estimate")
 
 #' @title calc_test_ret
 #' @description generic function for performing the Wald-type test
-#' @param x object of class negbin, poisson, exponential, ...
+#' @param x object of class negbin, poisson, exponential, binary, ...
 #' @keywords internal
 calc_test_ret <- function(x, Delta, data_name, ...) UseMethod("calc_test_ret")
 

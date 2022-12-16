@@ -4,8 +4,15 @@
 \alias{calc_power_ret.negbin}
 \title{calc_power_ret.negbin}
 \usage{
-\method{calc_power_ret}{negbin}(x, Delta, allocation, n = NULL,
-  power = NULL, sig_level = NULL, ...)
+\method{calc_power_ret}{negbin}(
+  x,
+  Delta,
+  allocation,
+  n = NULL,
+  power = NULL,
+  sig_level = NULL,
+  ...
+)
 }
 \description{
 Power related calculations for Wald-type test with Poisson distributed endpoints

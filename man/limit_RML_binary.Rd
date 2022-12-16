@@ -4,8 +4,15 @@
 \alias{limit_RML_binary}
 \title{limit_RML_binary}
 \usage{
-limit_RML_binary(pExp1, pRef1, pPla1, Delta, allocation = c(1/3, 1/3,
-  1/3), h, h_inv)
+limit_RML_binary(
+  pExp1,
+  pRef1,
+  pPla1,
+  Delta,
+  allocation = c(1/3, 1/3, 1/3),
+  h,
+  h_inv
+)
 }
 \arguments{
 \item{pExp1}{Experimental treatment group rate in the (assumed) alternative}

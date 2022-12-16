@@ -4,8 +4,7 @@
 \alias{calc_power_ret}
 \title{calc_power_ret}
 \usage{
-calc_power_ret(x, Delta, allocation, n, power, sig_level, distribution,
-  ...)
+calc_power_ret(x, Delta, allocation, n, power, sig_level, distribution, ...)
 }
 \arguments{
 \item{x}{object of class negbin, poisson, exponential, binary...}

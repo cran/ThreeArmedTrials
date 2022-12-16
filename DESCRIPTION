@@ -2,8 +2,8 @@ Package: ThreeArmedTrials
 Type: Package
 Title: Design and Analysis of Clinical Non-Inferiority or Superiority
         Trials with Active and Placebo Control
-Version: 1.0-3
-Date: 2019-02-17
+Version: 1.0-4
+Date: 2022-12-16
 Authors@R: c(person("Tobias", "Mütze", role=c("aut","cre"),
                     email="tobias.muetze@outlook.com",
                     comment = c(ORCID = "0000-0002-4111-1941")),
@@ -17,18 +17,18 @@ Description: Design and analyze three-arm non-inferiority or superiority trials
     binary (Friede and Kieser (2007) <doi:10.1002/sim.2543>), nonparametric (Muetze et al. (2017) <doi:10.1002/sim.7176>),
     exponential (Mielke and Munk (2009) <arXiv:0912.4169>).
 Depends: R (>= 3.0.0)
-Imports: stats, MASS, numDeriv
+Imports: stats, MASS, methods, numDeriv
 Suggests: testthat, knitr, rmarkdown
-License: GPL (>= 2)
+License: GPL (>= 3)
 NeedsCompilation: yes
 URL: https://github.com/tobiasmuetze/ThreeArmedTrials
 BugReports: https://github.com/tobiasmuetze/ThreeArmedTrials/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Encoding: UTF-8
 VignetteBuilder: knitr
 LazyData: true
-Packaged: 2019-02-17 08:58:37 UTC; tobiasmuetze
+Packaged: 2022-12-16 10:09:30 UTC; muetzto1
 Author: Tobias Mütze [aut, cre] (<https://orcid.org/0000-0002-4111-1941>),
   Tim Friede [ctb]
 Repository: CRAN
-Date/Publication: 2019-02-17 18:40:03 UTC
+Date/Publication: 2022-12-16 13:00:05 UTC

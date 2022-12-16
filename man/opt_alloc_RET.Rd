@@ -4,8 +4,7 @@
 \alias{opt_alloc_RET}
 \title{Optimal sample size for three-arm trials when analyzed with a Wald-type test}
 \usage{
-opt_alloc_RET(experiment, reference, placebo, Delta, distribution,
-  h = NULL)
+opt_alloc_RET(experiment, reference, placebo, Delta, distribution, h = NULL)
 }
 \arguments{
 \item{experiment}{a numeric vector specifying the parameters of the experimental

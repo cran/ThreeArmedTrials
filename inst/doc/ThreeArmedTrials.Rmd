@@ -92,7 +92,7 @@ The estimators $\hat{\lambda}_{k}$ are maximum-likelihood estimators for the par
 ## The main functions in *ThreeArmedTrials*
   
 This package is implemented such that the function names for each of the three tasks (optimal sample size allocation calculation, sample size calculation, data analysis) do not depend on the statistical model.
-The model is then specfied when calling the functions.
+The model is then specified when calling the functions.
 The next table lists the task and the corresponding R-function for performing this task.
 
 | Task | R-function | 
@@ -109,8 +109,7 @@ For each of the models, this parameter vector corresponds to the vector $\theta_
 In this section, we exercise planning and analyzing a three-arm study in the *gold standard* design for binary data.
 The example is motivated by clinical trials in patients with depression. 
 We define the binary endpoint *remission* as a HAM-D total score of less than or equal to 7. 
-For more details see 
-<a href="http://onlinelibrary.wiley.com/doi/10.1002/sim.2543/full">Kieser and Friede (2007)</a>.
+For more details see Kieser and Friede (2007).
 The parameter of interest $p_k$ is then the probability that remission is achieved. 
 In contrast to the definition of the non-inferiority hypothesis above, larger values of $p_k$ are more desirable. 
 Through the choice of the function $h$, the parameter $p_k$ can be transformed such that larger values of the parameter are more desirable. 
@@ -269,7 +268,7 @@ data(seizures)
 knitr::kable(head(seizures), caption = "First six entries of seizures dataset", row.names = TRUE)
 ```
 
-For the `seizures` data set non-inferiority of the experimental treatment compared to the reference will be tested with a non-inferiority margion of $\Delta=0.8$. 
+For the `seizures` data set non-inferiority of the experimental treatment compared to the reference will be tested with a non-inferiority margin of $\Delta=0.8$. 
 The standard deviation for the Wald-type test will be estimated using a maximum-likelihood estimator restricted to the parameter space of the null hypothesis. 
 Thus, we set the parameter `var_estimation = "RML"`. 
 For the unrestricted estimator, `var_estimation = "ML"` can be used. 

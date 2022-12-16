@@ -4,12 +4,14 @@
 \name{seizures}
 \alias{seizures}
 \title{Number of seizures per patient.}
-\format{A data frame with 18 rows and 3 variables:
+\format{
+A data frame with 18 rows and 3 variables:
 \describe{
   \item{pla}{Placebo group}
   \item{ref}{Reference group}
   \item{exp}{Experimental treatment group}
-}}
+}
+}
 \usage{
 seizures
 }

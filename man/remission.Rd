@@ -4,12 +4,14 @@
 \name{remission}
 \alias{remission}
 \title{Remission in clinical trial in patients with depression.}
-\format{A data frame with 88 rows and 3 variables:
+\format{
+A data frame with 88 rows and 3 variables:
 \describe{
   \item{placebo}{Placebo group}
   \item{reference}{Reference group}
   \item{experimental}{Experimental treatment group}
-}}
+}
+}
 \usage{
 remission
 }

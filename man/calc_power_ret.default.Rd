@@ -4,8 +4,16 @@
 \alias{calc_power_ret.default}
 \title{power_ret.default}
 \usage{
-\method{calc_power_ret}{default}(x, Delta, allocation, n = NULL,
-  power = NULL, sig_level = NULL, method = NULL, ...)
+\method{calc_power_ret}{default}(
+  x,
+  Delta,
+  allocation,
+  n = NULL,
+  power = NULL,
+  sig_level = NULL,
+  method = NULL,
+  ...
+)
 }
 \description{
 Default method for power calculations in three-arm trials

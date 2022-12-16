@@ -4,12 +4,14 @@
 \name{T2lesions}
 \alias{T2lesions}
 \title{Number of new and enlarging T2 lesions per patient.}
-\format{A data frame with 150 rows and 3 variables:
+\format{
+A data frame with 150 rows and 3 variables:
 \describe{
   \item{pla}{Placebo group}
   \item{ref}{Reference group}
   \item{exp}{Experimental treatment group}
-}}
+}
+}
 \usage{
 T2lesions
 }

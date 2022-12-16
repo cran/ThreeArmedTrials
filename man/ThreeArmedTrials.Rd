@@ -3,7 +3,6 @@
 \docType{package}
 \name{ThreeArmedTrials}
 \alias{ThreeArmedTrials}
-\alias{ThreeArmedTrials-package}
 \title{Design and Analysis of Three-armed Clinical Non-Inferiority or Superiority Trials with Active and Placebo Control}
 \description{
 The package \pkg{ThreeArmedTrials} provides functions for designing

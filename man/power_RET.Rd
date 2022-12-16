@@ -4,9 +4,18 @@
 \alias{power_RET}
 \title{Power related calculations for three-arm clinical trials}
 \usage{
-power_RET(experiment, reference, placebo, Delta, sig_level = NULL,
-  power = NULL, n = NULL, allocation = c(1/3, 1/3, 1/3),
-  distribution = NULL, ...)
+power_RET(
+  experiment,
+  reference,
+  placebo,
+  Delta,
+  sig_level = NULL,
+  power = NULL,
+  n = NULL,
+  allocation = c(1/3, 1/3, 1/3),
+  distribution = NULL,
+  ...
+)
 }
 \arguments{
 \item{experiment}{a numeric vector specifying the parameters of the experimental

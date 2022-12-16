@@ -50,7 +50,7 @@ the effect and the variance for the test statistic are estimated
 by the sample means and sample variances.\cr
 The parameter \code{var_estimation} defines how the variance is estimated
 in the parametric models \code{"poisson"} and \code{"negbin"}.
-The follwing options exist:
+The following options exist:
 \code{RML} for the restricted maximum-likelihood estimator
 and \code{ML} (default) for the unrestricted maximum-likelihood estimator.
 }

@@ -1,5 +1,7 @@
 #' @title estimate.binary
 #' @description Parameter estimation for Wald-type test with binary endpoints
+#' @importFrom numDeriv grad
+#' @importFrom stats optim
 #' @keywords internal
 estimate.binary <- function(x, Delta, ...) {
 
@@ -74,6 +76,8 @@ estimate.binary <- function(x, Delta, ...) {
 
 #' @title calc_power_ret.binary
 #' @description Power related calculations for Wald-type test with binary endpoints
+#' @importFrom numDeriv grad
+#' @importFrom stats optim
 #' @keywords internal
 calc_power_ret.binary <- function(x, Delta, allocation, n = NULL, power = NULL, sig_level = NULL, ...) {
 

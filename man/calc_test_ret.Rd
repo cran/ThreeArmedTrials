@@ -7,7 +7,7 @@
 calc_test_ret(x, Delta, data_name, ...)
 }
 \arguments{
-\item{x}{object of class negbin, poisson, exponential, ...}
+\item{x}{object of class negbin, poisson, exponential, binary, ...}
 }
 \description{
 generic function for performing the Wald-type test
